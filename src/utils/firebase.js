@@ -2,12 +2,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD_7V8KjxgWoD6t7modRIPXbcpXfA5y-YA",
-    authDomain: "tenedores-v1-c302a.firebaseapp.com",
-    projectId: "tenedores-v1-c302a",
-    storageBucket: "tenedores-v1-c302a.appspot.com",
-    messagingSenderId: "33628664022",
-    appId: "1:33628664022:web:f744b6fba530b5935d9977"
+    apiKey: process.env.EXPO_PUBLIC_API_KEY,
+    authDomain: process.env.EXPO_PUBLIC_AUTH_DOMAIN,
+    projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
+    storageBucket: process.env.EXPO_PUBLIC_STORAGE_BUCKET,
+    messagingSenderId: process.env.EXPO_PUBLIC_MESSAGING_SENDER_ID,
+    appId: process.env.EXPO_PUBLIC_APP_ID
 };
 
 
