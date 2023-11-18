@@ -1,5 +1,6 @@
 
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: process.env.EXPO_PUBLIC_API_KEY,
@@ -12,3 +13,5 @@ const firebaseConfig = {
 
 
 export const initFirebase = initializeApp(firebaseConfig);
+
+export const db = getFirestore(initFirebase)

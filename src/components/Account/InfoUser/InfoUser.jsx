@@ -5,7 +5,6 @@ import { Avatar, Text } from "@rneui/themed"
 import { getAuth, updateProfile } from "firebase/auth"
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import { styles } from './InfoUser.styles'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 export function InfoUser({ setLoading, setLoadingText }) {
 
